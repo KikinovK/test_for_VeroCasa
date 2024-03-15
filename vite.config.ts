@@ -7,5 +7,5 @@ const isProduction = process.env.NODE_ENV === 'production';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: isProduction ? 'hierarchical-tables' : '',
+  base: isProduction ? 'test_for_VeroCasa' : '',
 });
