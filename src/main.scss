@@ -1,1 +1,22 @@
-@import 'reset';
+@import './scss/mixin';
+@import './scss/reset';
+
+@include font_face('Roboto-Regular', 'Roboto', './fonts/');
+@include font_face('Montserrat-Regular', 'Montserrat', './fonts/');
+
+:root {
+  --max-width-page: 1170px;
+
+  --hor-padding-section: 2rem;
+
+  --color-black-10: #E8E8E8;
+  --color-black-80: #343434;
+  --color-white: #ffffff;
+  --color-hover: #fff200;
+}
+
+
+html {
+  font-family: 'Roboto';
+  font-size: 10px;
+}

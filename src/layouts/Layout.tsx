@@ -1,8 +1,15 @@
 import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
+import Header from '../components/Header/Header';
+import Main from '../ui/Main/Main';
 
 const Layout: FC = () => (
-  <Outlet />
+  <>
+    <Header />
+    <Main>
+      <Outlet />
+    </Main>
+  </>
 );
 
 export default Layout;

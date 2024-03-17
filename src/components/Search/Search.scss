@@ -1,0 +1,25 @@
+@import '../../scss/mixin.scss';
+
+.search {
+  @include flex_block(row, nowrap, flex-start, center, center);
+
+  padding: 0.5rem 0.9rem 0.5rem 0.5rem;
+
+  background-color: var(--color-black-10);
+  border-radius: 1.5rem;
+}
+
+.search__button {
+  @include button_icon(3.2rem, 3.2rem);
+
+  &:not(:last-child) {
+    margin-right: .6rem;
+  }
+}
+
+.search__input {
+  width: 23rem;
+
+  background-color: var(--color-black-10);
+  border: none;
+}

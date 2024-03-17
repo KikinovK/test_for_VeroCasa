@@ -1,0 +1,31 @@
+@import '../../scss/mixin.scss';
+
+.top_row {
+  padding: 1.4rem var(--hor-padding-section) 1rem;
+
+  background-color: var(--color-black-80);
+}
+
+.top_row__list {
+  @include flex_block(row, nowrap, flex-start, center, center);
+}
+
+.top_row__item {
+  &:not(:last-child) {
+    margin-right: 2.3rem;
+  }
+
+  &.top_row__item--pos_mod {
+    margin-left: auto;
+  }
+}
+
+.top_row__link {
+  @include hover_link;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33;
+  color: var(--color-white);
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+@import '../../scss/mixin.scss';
+
+.nav_header {
+  padding: 1.2rem var(--hor-padding-section) 1.3rem;
+}
+
+.nav_header__list {
+  @include flex_block(row, nowrap, flex-start, center, center);
+}
+
+.nav_header__item {
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &.nav_header__item--pos_mod {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

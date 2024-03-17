@@ -1,0 +1,25 @@
+.btn {
+  @import '../../scss/mixin.scss';
+
+  padding: 0.4em 0.4em;
+
+  font-size: 1em;
+  font-weight: 500;
+
+  border-color: transparent;
+  background-color: transparent;
+
+
+  cursor: pointer;
+  transition: color 0.25s, transform 0.25s;
+
+  @include hover_link;
+
+  svg {
+    @include tranisition_fill;
+
+    fill: currentColor;
+    stroke: currentColor;
+  }
+
+}

@@ -7,7 +7,7 @@ import Section from '../../ui/Section/Section';
 const NotFoundPage = () => (
   <Section>
     <h2>Not Found Page</h2>
-    <Link to={HOME}>Return to Home</Link>
+    <Link to={HOME} >Return to Home</Link>
   </Section>
 );
 

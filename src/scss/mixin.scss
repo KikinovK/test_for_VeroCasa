@@ -1,0 +1,81 @@
+
+
+@mixin font_face($file_name, $font_name: $file_name, $path: $font_path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font_name);
+		src: url($path + $file-name + '.woff2') format('woff2'), url($path + $file-name + '.woff') format('woff');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}
+
+@mixin flex_block($flex-direction: row, $flex-wrap: wrap, $content: space-between, $align-items: flex-start, $align-content: flex-start) {
+	display: flex;
+	flex-direction: $flex-direction;
+	flex-wrap: $flex-wrap;
+	justify-content: $content;
+	align-content: $align-content;
+	align-items: $align-items;
+}
+
+@mixin transition_background {
+	transition: background 0.3s ease;
+	will-change: background;
+}
+
+@mixin transition_color {
+	transition: color 0.3s ease;
+	will-change: color;
+}
+
+@mixin transition_color_background {
+	transition: color 0.3s ease, background 0.3s ease;
+	will-change: color, background;
+}
+
+@mixin transition_transform {
+	transition: transform 0.3s ease;
+	will-change: transform;
+}
+
+@mixin tranisition_fill {
+	transition: fill 0.3s ease;
+	will-change: fill;
+}
+
+@mixin transition_color_transform {
+  transition: color 0.3s ease, transform 0.3s ease;
+  will-change: transform;
+}
+
+@mixin transition_color_transform_background {
+  transition:
+		color 0.3s ease,
+		transform 0.3s ease,
+		background 0.3s ease;
+  will-change: transform, color, background;
+}
+
+@mixin hover_link {
+  @include transition_color_transform_background;
+
+  &:hover {
+    color: var(--color-hover);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@mixin button_icon($width: 2.3rem, $height: 2.3rem) {
+	width: $width;
+  height: $height;
+
+  border-radius: 50%;
+
+  &:hover {
+    background-color: var(--color-black-80);
+  }
+}

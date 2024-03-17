@@ -1,0 +1,22 @@
+@import '../../scss/mixin.scss';
+
+.menu__list {
+  @include flex_block(row, nowrap, flex-start, center, center);
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+.menu__link {
+  @include hover_link;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-black-80);
+  text-transform: uppercase;
+  text-decoration: none;
+}
