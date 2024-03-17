@@ -1,9 +1,7 @@
-import Section from "../../ui/Section/Section";
+import Hero from "../../components/Hero/Hero";
 
 const HomePage = () => (
-  <Section>
-    Home
-  </Section>
+  <Hero />
 );
 
 export default HomePage;
