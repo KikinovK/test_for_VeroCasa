@@ -22,4 +22,8 @@
     stroke: currentColor;
   }
 
+  &:disabled {
+    pointer-events: none;
+  }
+
 }

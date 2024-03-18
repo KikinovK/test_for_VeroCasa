@@ -1,0 +1,35 @@
+@import '../../scss/mixin.scss';
+
+.slider_general__header {
+  @include flex_block(row, nowrap, flex-start, center, center);
+
+  padding: 3rem 0;
+}
+
+.slider_general__title {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.slider_general__counter {
+  margin-left: auto;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+}
+
+.slider_general__btn {
+  width: 3.2rem;
+  height: 1.5rem;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}

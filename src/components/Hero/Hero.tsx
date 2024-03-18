@@ -1,14 +1,18 @@
+import { FC } from 'react';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import SlideHero from '../SlideHero/SlideHero';
 
-import { FC } from 'react';
+import SlideHero from '../SlideHero/SlideHero';
 import Button from '../../ui/Button/Button';
+
 import ArrowLeftIcon from '../../assets/icon/arr_left.svg?react';
 import ArrowRightIcon from '../../assets/icon/arr_right.svg?react';
 
-import './Hero.scss';
+import { SliderButtonProps } from '../../types/interface'
+
+import './Hero.scss';;
 
 const items = [
   {
@@ -33,18 +37,15 @@ const items = [
     text: 'Залишився лише тиждень',
   },
 ]
-interface heroButtonProps {
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void,
-}
 
-const HeroNextArrow: FC<heroButtonProps> = ({ onClick = () => {}}) => {
+const HeroNextArrow: FC<SliderButtonProps> = ({ onClick = () => {}}) => {
   return (
     <Button classNames={['hero__btn', 'hero__btn--next']} onClick={onClick}>
       <ArrowRightIcon />
     </Button>
   );
 }
-const HeroPrevArrow: FC<heroButtonProps> = ({ onClick = () => {}}) => {
+const HeroPrevArrow: FC<SliderButtonProps> = ({ onClick = () => {}}) => {
   return (
     <Button classNames={['hero__btn', 'hero__btn--prev']} onClick={onClick}>
       <ArrowLeftIcon />
