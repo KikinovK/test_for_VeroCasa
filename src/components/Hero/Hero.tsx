@@ -16,21 +16,21 @@ import './Hero.scss';;
 
 const items = [
   {
-    imgSrc: 'images/hero_1.jpg',
+    imgSrc: '/images/hero_1.jpg',
     imgAlt: 'hero 1',
     title: '<strong>Швидше. <br>Вище. <br>Сильніше.</strong> <br>Разом із Nike',
     subTitle: 'Знижки до 40%',
     text: 'Залишився лише тиждень',
   },
   {
-    imgSrc: 'images/hero_1.jpg',
+    imgSrc: '/images/hero_1.jpg',
     imgAlt: 'hero 1',
     title: '<strong>Швидше. <br>Вище. <br>Сильніше.</strong> <br>Разом із Nike',
     subTitle: 'Знижки до 40%',
     text: 'Залишився лише тиждень',
   },
   {
-    imgSrc: 'images/hero_1.jpg',
+    imgSrc: '/images/hero_1.jpg',
     imgAlt: 'hero 1',
     title: '<strong>Швидше. <br>Вище. <br>Сильніше.</strong> <br>Разом із Nike',
     subTitle: 'Знижки до 40%',

@@ -19,7 +19,7 @@ const Invite = () => (
       </div>
       <div className="invite__col">
         <div className="invite__pic">
-          <img src={`${BASE_URL}images/invite.jpg`} alt="invite" className="invite__img" />
+          <img src={`${BASE_URL}/images/invite.jpg`} alt="invite" className="invite__img" />
         </div>
       </div>
     </div>

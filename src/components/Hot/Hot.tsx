@@ -6,7 +6,7 @@ import './Hot.scss';
 
 const items = [
   {
-    imgSrc: 'images/hot_1.png',
+    imgSrc: '/images/hot_1.png',
     imgAlt: 'hot_1',
     title: 'Термобілизна для бодібілдерів',
     type: 'Для чоловіків',
@@ -14,7 +14,7 @@ const items = [
     price: '4000',
   },
   {
-    imgSrc: 'images/hot_2.png',
+    imgSrc: '/images/hot_2.png',
     imgAlt: 'hot_2',
     title: 'Майка для бодібілдерів',
     type: 'Для жінок',
@@ -22,7 +22,7 @@ const items = [
     price: '1100 грн.',
   },
   {
-    imgSrc: 'images/hot_3.png',
+    imgSrc: '/images/hot_3.png',
     imgAlt: 'hot_3',
     title: 'Ланцюжок для бодібілдерів',
     type: 'Аксесуари',
@@ -30,7 +30,7 @@ const items = [
     price: '2000 грн.',
   },
   {
-    imgSrc: 'images/hot_1.png',
+    imgSrc: '/images/hot_1.png',
     imgAlt: 'hot_1',
     title: 'Термобілизна для бодібілдерів',
     type: 'Для чоловіків',
@@ -38,7 +38,7 @@ const items = [
     price: '4000',
   },
   {
-    imgSrc: 'images/hot_3.png',
+    imgSrc: '/images/hot_3.png',
     imgAlt: 'hot_3',
     title: 'Ланцюжок для бодібілдерів',
     type: 'Аксесуари',
@@ -46,7 +46,7 @@ const items = [
     price: '2000 грн.',
   },
   {
-    imgSrc: 'images/hot_2.png',
+    imgSrc: '/images/hot_2.png',
     imgAlt: 'hot_2',
     title: 'Майка для бодібілдерів',
     type: 'Для жінок',
@@ -54,7 +54,7 @@ const items = [
     price: '1100 грн.',
   },
   {
-    imgSrc: 'images/hot_1.png',
+    imgSrc: '/images/hot_1.png',
     imgAlt: 'hot_1',
     title: 'Термобілизна для бодібілдерів',
     type: 'Для чоловіків',
@@ -62,7 +62,7 @@ const items = [
     price: '4000',
   },
   {
-    imgSrc: 'images/hot_2.png',
+    imgSrc: '/images/hot_2.png',
     imgAlt: 'hot_2',
     title: 'Майка для бодібілдерів',
     type: 'Для жінок',
@@ -70,7 +70,7 @@ const items = [
     price: '1100 грн.',
   },
   {
-    imgSrc: 'images/hot_3.png',
+    imgSrc: '/images/hot_3.png',
     imgAlt: 'hot_3',
     title: 'Ланцюжок для бодібілдерів',
     type: 'Аксесуари',
@@ -81,7 +81,7 @@ const items = [
 
 const Hot = () => (
   <Section classNames={['hot']}>
-    <SliderGeneral title="Найгарячіші товари" slidesToShow={3} slidesToScroll={3}>
+    <SliderGeneral title="" slidesToShow={3} slidesToScroll={3}>
       {items.map(item => (
         <HotCard key={item.title} {...item} />
       ))}
