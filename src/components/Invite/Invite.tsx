@@ -1,3 +1,4 @@
+import { BASE_URL } from '../../shared/baseUrl';
 import Button from '../../ui/Button/Button';
 import Section from '../../ui/Section/Section';
 import './Invite.scss';
@@ -18,7 +19,7 @@ const Invite = () => (
       </div>
       <div className="invite__col">
         <div className="invite__pic">
-          <img src="/images/invite.jpg" alt="invite" className="invite__img" />
+          <img src={`${BASE_URL}images/invite.jpg`} alt="invite" className="invite__img" />
         </div>
       </div>
     </div>

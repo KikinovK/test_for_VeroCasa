@@ -4,6 +4,8 @@ import Button from '../../ui/Button/Button';
 
 import FavoritesIcon from '../../assets/icon/favorites.svg?react';
 
+import { BASE_URL } from '../../shared/baseUrl';
+
 import './HotCard.scss';
 
 interface HotCardProps {
@@ -26,7 +28,7 @@ const HotCard: FC<HotCardProps> = ({
   return (
     <div className="hot_card">
       <div className="hot_card__pic">
-        <img src={imgSrc} alt={imgAlt} className="hot_card__img" />
+        <img src={`${BASE_URL}${imgSrc}`} alt={imgAlt} className="hot_card__img" />
       </div>
       <h3 className="hot_card__title">{title}</h3>
       <div className="hot_card__type">{type}</div>
