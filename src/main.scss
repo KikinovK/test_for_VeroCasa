@@ -2,6 +2,7 @@
 @import './scss/reset';
 
 @include font_face('Roboto-Regular', 'Roboto', './fonts/');
+@include font_face('Roboto-Medium', 'Roboto', './fonts/', 500);
 @include font_face('Montserrat-Regular', 'Montserrat', './fonts/');
 @include font_face('Inter-Light', 'Inter', './fonts/', 300);
 @include font_face('Inter-Regular', 'Inter', './fonts/');
@@ -15,6 +16,7 @@
   --color-black-10: #E8E8E8;
   --color-black-60: #626262;
   --color-black-80: #343434;
+  --color-black-100: #000000;
   --color-white: #ffffff;
   --color-hover: #fff200;
 }
@@ -23,4 +25,5 @@
 html {
   font-family: 'Roboto' , sans-serif;
   font-size: 10px;
+  color: var(--color-black-80);
 }
