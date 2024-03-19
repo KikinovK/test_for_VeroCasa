@@ -1,0 +1,103 @@
+@import '../../scss/mixin.scss';
+
+@mixin feed_rounded {
+  border-radius: 1.5rem;
+}
+
+.feed {
+  padding-top: 9rem;
+
+  &:before {
+    content: '';
+    height: 1px;
+    width: var(--hor-padding-section);
+
+    background-color: var(--color-black-40);
+  }
+}
+
+.feed__title {
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 1.31;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.feed__info {
+  max-width: 57rem;
+
+  margin: 0 auto;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+.feed__form_wr {
+  @include flex_block(row, nowrap, center, center, center);
+
+  position: relative;
+
+  padding-bottom: 3px;
+}
+
+
+.feed__form {
+  @include flex_block(row, nowrap, flex-start, center, center);
+  @include feed_rounded;
+
+  border: 1px solid var(--color-black-60);
+
+  border-right: none;
+}
+
+.feed__input {
+  @include feed_rounded;
+
+  padding: 1.2rem 1.8rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.56;
+
+  border: none;
+
+  &::placeholder {
+    color: var(--color-black-40);
+  }
+}
+
+.feed__btn {
+  @include feed_rounded;
+
+  padding: 1.3rem 3.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  background-color: var(--color-black-60);
+
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-black-80);
+  }
+}
+
+.feed__input_error {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+
+  color: var(--color-error);
+}

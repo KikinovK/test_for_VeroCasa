@@ -72,7 +72,6 @@ const SliderGeneral: FC<SliderGeneralProps> = ({
     afterChange: (index: number) => {
       setCurrentSlide(index + 1);
     },
-    dots: true,
   };
   return (
     <>
