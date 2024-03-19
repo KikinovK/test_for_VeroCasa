@@ -1,0 +1,11 @@
+@import '../../scss/mixin.scss';
+
+.reviews {
+  padding-top: 4rem;
+  padding-bottom: 5.7rem;
+
+  & .slick-list {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}

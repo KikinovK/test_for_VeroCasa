@@ -1,0 +1,14 @@
+@import '../../scss/mixin.scss';
+
+.star__list {
+  @include flex_block(row, nowrap, flex-start, center, center);
+}
+
+.star__item {
+  width: 0.8rem;
+  height: 0.8rem;
+
+  &:not(:last-child) {
+    margin-right: .4rem;
+  }
+}
