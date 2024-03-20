@@ -72,10 +72,6 @@
   height: $height;
 
   border-radius: 50%;
-
-  &:hover {
-    background-color: var(--color-black-80);
-  }
 }
 
 @mixin main_text {
