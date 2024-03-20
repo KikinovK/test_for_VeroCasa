@@ -1,0 +1,32 @@
+@import '../../scss/mixin.scss';
+
+.chapter__title,
+.chapter__link,
+.chapter__text {
+  @include main_text;
+}
+
+.chapter__link,
+.chapter__text {
+  color: var(--color-black-60);
+}
+
+.chapter__title {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.chapter__link {
+  @include hover_link;
+
+  text-decoration: none;
+}
+
+.chapter__item {
+  min-width: 17rem;
+
+  &:not(:last-child) {
+    margin-bottom: .6rem;
+  }
+}

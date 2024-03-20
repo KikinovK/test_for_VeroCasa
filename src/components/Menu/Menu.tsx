@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Menu.scss';
+import { FC } from 'react';
+
+interface MenuProps {
+  modName?: string;
+}
 
 const items = [
   {
@@ -24,8 +29,8 @@ const items = [
   },
 ]
 
-const Menu = () => (
-  <div className="menu">
+const Menu: FC<MenuProps> = ({modName =''}) => (
+  <div className={`menu${modName ? ' menu--' + modName : ''}`}>
     <ul className="menu__list">
       {items.map(item => (
         <li key={item.name} className="menu__item">

@@ -11,12 +11,21 @@
 }
 
 .menu__link {
-  @include hover_link;
 
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--color-black-80);
-  text-transform: uppercase;
   text-decoration: none;
+
+  &:not(.menu--footer &) {
+    @include hover_link;
+
+    color: inherit;
+  }
+
+  .menu--footer & {
+    @include hover_link;
+
+    color: var(--color-white);
+  }
 }

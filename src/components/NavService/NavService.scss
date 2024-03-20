@@ -1,0 +1,21 @@
+@import '../../scss/mixin.scss';
+
+.nav_service {
+  padding-top: 4.2rem;
+  padding-bottom: 4.6em;
+
+}
+
+.nav_service__list {
+  @include flex_block(row, nowrap, flex-start);
+}
+
+.nav_service__item {
+  &:nth-child(2) {
+    margin-left: auto;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    margin-right: 13rem;
+  }
+}

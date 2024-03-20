@@ -8,7 +8,7 @@ import './NavHeader.scss';
 import ButtonFavorites from '../ButtonFavorites/ButtonFavorites';
 
 const NavHeader = () => (
-  <div className='nav_header'>
+  <nav className='nav_header'>
     <Container>
       <ul className="nav_header__list">
         <li className="nav_header__item">
@@ -28,7 +28,7 @@ const NavHeader = () => (
         </li>
       </ul>
     </Container>
-  </div>
+  </nav>
 );
 
 export default NavHeader;

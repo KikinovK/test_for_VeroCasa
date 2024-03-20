@@ -1,0 +1,13 @@
+@import '../../scss/mixin.scss';
+
+.footer {
+
+  &:before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+
+    background-color: var(--color-black-20);
+  }
+}
